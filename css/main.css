@@ -1,0 +1,146 @@
+*{
+   font-family: Georgia;
+   box-sizing: border-box ;
+   transition: .5% ease-in-out;
+   outline: none;
+}
+body {
+   background-color: #1e1f21;
+}
+#canvas{
+    background-color: #577fd226;
+}
+.all{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+}
+#score{
+    margin-top: 1%;
+    padding: 0;
+    width: 100%;
+    border: none;
+}
+#tabl{
+    width: 95%;
+    overflow: auto;
+    height: 10em;
+   scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin ; 
+}
+th,td{
+   border: 1px solid;
+   border-radius: 3px;
+}
+header,footer{
+    background-color: #577fd2;
+    font-size: 16pt;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wraper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.can{
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+    width: 50%;
+}
+h1{
+    font-size: 14pt;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    width: 25%;
+}
+.margau{
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.msg{
+    padding-bottom: 1%;
+
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    background-color: #577fd2;
+    border: 4px solid #0a0d45;
+    font-size: 20pt;
+    color: white;
+    border-radius: 3px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inp_text{
+    width: 95%;
+    font-size: 20pt;
+    margin-top: 2%;
+    border: 1px solid;
+    background-color: #9cb1eb;
+    border-radius: 10px;
+    color: #020b36;
+    text-align: center;
+}
+#tx{
+    margin: 0;
+    padding: 1.2%; 
+    width: 100%;
+    background-color: #00018473;
+}
+.btns{
+    cursor: pointer;
+    background: #ff3018;
+    color: white;
+    border: 1px solid #5e360a;
+    font-size: 16pt;
+    width: 16%;
+    height: 1.8em;
+    border-radius: 3px;
+}
+.btns:hover{
+    background: #a70000;
+}
+.btns:active{
+    background: #5d0000;
+}
+#help{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#msg_btn{
+   width: 95%;
+   margin-top: 2%;
+   border-radius: 10px;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;   
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #161933fc;
+}
+::-webkit-scrollbar {
+    width: 0; /* ширина для вертикального скролла */
+    height: 0; /* высота для горизонтального скролла */
+
+}

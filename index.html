@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+         </script>   
+         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Пазлы</title>
+    </head>
+    
+    <body>
+        <div class="overlay"></div>
+    <div class="all">
+          <header>
+                  <h1 id="plvl">Пазлы уровень: 1</h1>
+                  <h1 id="text_name">Игрок: Имя</h1>
+                  <button class="btns" id="help"> 
+                  <img src="img/help.png" height="35" />
+                  <img src="img/help.png" height="35" />
+                  <img src="img/help.png" height="35" />
+                  </button>
+                  <button class="btns" id="scores">Рекорды</button>
+                  <button class="btns" id="reset">Сброс</button>                  
+             
+          </header>        
+            <div class="msg">
+                <p id="tx">Вы готовы начать?</p>   
+                <input hidden="true" type="text" name="inp_text" id="inp_text"/>  
+                <div id="tabl"> <table id="score" border="1">
+                    <tr>
+                        <th>Игрок</th>
+                        <th>Очки</th>
+                    </tr>
+                </table> </div>
+               
+                
+                <button class="btns margau" id="msg_btn">Ок</button>
+            </div>            
+        
+
+        <div class="can margau">
+              <canvas id="canvas" ></canvas>
+        </div>        
+    </div>
+        <script src="js/main.js"></script>  
+        <script src="js/canv.js"></script>
+    </body>
+</html>
